@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Sarpras</title>
+  <link rel="stylesheet" href="../css/beranda.css" />
+<!--Menu-->
+<div class="menu">
+  <ul class="sidebar">
+    <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26" fill="#e3e3e3"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+    <li class="li-menu"><a href="../page/Beranda.html">Struktur</a></li>
+    <li class="li-menu"><a href="../page/Tentang.html">About</a></li>
+    <li class="li-menu"><a href="../page/anggota.html">anggota</a></li>
+  </ul>
+  <ul class="menu-ul">
+    <li class="hideOnMobile"><a href="#"><img src="../img/logo.png" class="img-menu"></a></li>
+    <li class="li-menu"><a href="../page/Beranda.html">Struktur</a></li>
+    <li class="li-menu"><a href="../page/Tentang.html">About</a></li>
+    <li class="li-menu"><a href="../page/anggota.html">anggota</a></li>
+    <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26" fill="#e3e3e3"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+  </ul>
+</div>
+
+<script>
+  function showSidebar(){
+    const sidebar = document.querySelector('.sidebar')
+    sidebar.style.display = 'flex'
+  }
+  function hideSidebar(){
+    const sidebar = document.querySelector('.sidebar')
+    sidebar.style.display = 'none'
+  }
+</script>
+
+</head>
+<body>
+  <!--animation-->
+<div class="container">
+  <ul>
+    <b class="p-judul">SARPRAS SMKN 2 BALEENDAH</b>
+    <b class="p-bawah">Sarana Dan Prasarana</b>
+  </ul>
+</div>
+ <!--footer2-->
+<div class="f2">
+  <ul>
+    <b class="p-f2">KAMI AKAN MENJAGA LINGGKUNGAN SEKOLAH YANG AMAN DAN NYAMAN</b>
+  </ul>
+</div>
+<section class="container-section">
+  <div class="container-f">
+    <h2 class="visi">Visi:    </h2>
+    <p>meningkatkan kualitas dan kuantitas sarana dan prasarana 
+    pendidikan sesuai dengan standar industri terkini</p>
+  </div>
+</section>
+<div class="logo-ig">
+  <li href="#" class="logo-1">
+   <a href="#" class="link">kalian bisa hubungi kami jika perlu bantuan
+    <img src="../img/OIP.jpg" class="img-logo" >
+  </a> 
+  </li>
+</div>
+<section class="foother2">
+  <div>
+    <h1>kalian bisa hubungi kami dengan klik logo ig diatas jika perlu bantuan</h1>
+  </div>
+
+</section>
+<h1 class="fz">==============================================================================</h1>
+</body>
+</html>

@@ -1,0 +1,204 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 160vh;
+    background-image: url(../img/smkn.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.menu {
+    background-color: white;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+.menu-ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    border-color: black;
+}
+
+div li {
+    height: 50px;
+}
+
+div a {
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: black;
+}
+
+div a:hover {
+    display: flex;
+    background-color: #f0f0f0;
+    width: 100%;
+}
+
+div li:first-child {
+    margin-right: auto;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.sidebar li {
+    width: 100%;
+}
+
+.sidebar a {
+    width: 100%;
+}
+
+.menu-button {
+    display: none   ;
+}
+
+.li-menu {
+    border: black;
+}
+
+.foother {
+    background-color: #333;
+    display: flex;
+    color: white;
+    text-align: center;
+    padding: 1px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.ul-foother {
+    justify-content: center;
+    align-items: center;
+    position: center;
+    text-align: center;
+}
+
+.il-foother {
+    position: center;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    opacity: 0;
+    transform: translateY(50px);
+    animation: masuk 1s forwards;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    list-style: none;
+    height: 50vh;
+}
+
+.p-judul {
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.3);
+    font-size: 10vh;
+    backdrop-filter: blur(10px);
+}
+
+.p-bawah {
+    display: flex;
+    font-size: 4vh;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.3);
+    background-size: 100px;
+    animation-delay: 1s;
+    backdrop-filter: blur(10px);
+}
+
+.f2 {
+    opacity: 0;
+    transform: translateY(50px);
+    animation: masuk 1s forwards;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    list-style: none;
+    height: 40vh;
+    animation-delay: 2s;
+}
+
+.p-f2 {
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.3);
+    font-size: 4vh;
+    color: white;
+    background-size: 100%;
+    backdrop-filter: blur(10px);
+}
+
+.container-section {
+    padding-top: 100px;
+    padding-right: 40px;
+    padding-bottom: 500px;
+    padding-left: 0px;
+    background-color: white;
+}
+
+.visi {
+    display: flex;
+    position: relative;
+    font-weight: bold;
+}
+
+@keyframes masuk {
+    to {
+    opacity: 1;
+    transform: translateY(0);
+    }
+}
+
+@media(max-width: 800px){
+    .hideOnMobile{
+        display: none;
+    }
+    .menu-button{
+        display: block;
+    }
+}
+
+.img-menu {
+    height: 50px;
+}
+
+@media(max-width: 400px){
+    .sidebar{
+        width: 100%;
+    }
+}
